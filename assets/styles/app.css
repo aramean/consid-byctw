@@ -46,8 +46,8 @@ hr {
 
 h2 {
     font-size: 1.2em;
-    color: lightblue;
-    text-shadow: 1px 1px 1px white;
+    color: white;
+    text-shadow: 0px 0px 1px rgb(0, 0, 0, .5);
     border-radius: .5rem;
 }
 
