@@ -1,13 +1,14 @@
 h1 {
     font-family: 'childzone';
-    font-size: 60px;
+    font-size: 4em;
     font-weight: bolder;
     letter-spacing: -1px;
     text-shadow: 5px 5px 1px rgba(255, 255, 255, 1);
-    word-break: keep-all;
+    word-break: break-all;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    white-space: normal;
 }
 
 .t1 {
@@ -57,5 +58,45 @@ h1 {
     }
     50% {
         transform: translateY(-2px);
+    }
+}
+
+@media (min-width: 0px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .br2{
+        width: 100%;
+        line-height: 0;
+    }
+}
+
+@media (min-width: 400px) {
+    h1{
+        font-size: 2.8em;
+    }
+    .br2, .br3 {
+        width: 100%;
+        line-height: 0;
+    }
+}
+
+@media (min-width: 600px) {
+    h1{
+        font-size: 3.8em;
+    }
+    .br3 {
+        width: 100%;
+        line-height: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1{
+        font-size: 4em;
+    }
+    .br1, .br2, .br3 {
+        width: initial;
     }
 }
