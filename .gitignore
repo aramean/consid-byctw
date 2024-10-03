@@ -1,0 +1,85 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must be present in each folder
+Icon
+
+# Thumbnails
+._*
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux system files
+*~
+.nfs*
+
+# Node modules if using Node.js (adjust if using npm or yarn)
+node_modules/
+
+# Logs
+logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.orig
+
+# Build artifacts
+dist/
+build/
+
+# Coverage reports
+coverage/
+*.lcov
+
+# IDE specific files
+## Visual Studio Code
+.vscode/
+
+## JetBrains IDEs (IntelliJ IDEA, WebStorm, PyCharm, etc.)
+.idea/
+*.iml
+
+## Eclipse
+.classpath
+.project
+.settings/
+bin/
+target/
+
+## NetBeans
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/*.nb-gradle/
+
+## Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+## Atom
+.atom/
+
+## Visual Studio
+.vs/
+*.suo
+*.user
+*.userprefs
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# HTML related
+*.html.swp
+*.html.tmp

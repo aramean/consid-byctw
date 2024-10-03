@@ -1,0 +1,84 @@
+html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90vw;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: childzone;
+    src: url('../fonts/Eracake.otf');
+}
+
+img {
+    min-width: 150px;
+    width: 10vw;
+}
+
+h2 {
+    font-family: arial;
+    font-size: 1.1em;
+    color: white;
+    text-shadow: 0px 0px 1px rgb(0, 0, 0, .5);
+    border-radius: .5rem;
+}
+
+button {
+    padding: 1rem 2rem;
+    border-radius: 10rem;
+    font-size: 1.25em;
+    margin-bottom: .7rem;
+    width: 100%;
+    max-width: 25rem;
+    font-weight: bold;
+    line-height: 1.4rem;
+    background-color: white;
+    z-index: 2;
+    border: 2px solid lightblue;
+    box-shadow: 5px 7px 1px rgba(0, 0, 0, 0.05);
+    color: black;
+    position: relative;
+    transition: all 0.4s ease;
+    overflow: hidden;
+}
+
+button:hover {
+    background-color: snow;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    transform: translate(1px, 1px);
+}
+
+button::after {
+    content: '';
+    display: inline-block;
+    margin-left: 10px;
+    border: solid lightblue;
+    border-width: 0 3px 3px 0;
+    padding: 5px;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%) rotate(-45deg);
+    transition: transform 0.3s ease;
+}
+
+button:hover::after {
+    transform: translateY(-50%) translateX(2px) rotate(-45deg);
+    border-color: black;
+}

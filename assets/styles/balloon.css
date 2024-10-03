@@ -1,0 +1,105 @@
+:root {
+    --color1: #fc466b;
+    --color2: #3f5efb;
+    --color3: #e1eec3;
+    --color4: #f05053;
+    --color5: #64b3f4;
+    --color6: #6a3093;
+}
+
+.balloon {
+    width: 40px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 100px;
+    animation: balloon-anime linear infinite forwards;
+    opacity: .5;
+}
+
+.balloon:before {
+    content: "";
+    width: 6px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    transform: perspective(10px) rotateX(50deg);
+    top: 45px;
+    left: 16px;
+}
+
+.balloon:after {
+    content: "";
+    width: 30px;
+    height: 80px;
+    position: absolute;
+    left: 40%;
+    top: 80%;
+    border-radius: 50% 0 0 50%;
+    border-left: 1px solid black;
+    animation: thread-anime linear infinite alternate;
+}
+
+.balloon.x1 {
+    background-image: radial-gradient(var(--color1), var(--color2));
+    left: 20%;
+    animation-duration: 22s;
+    zoom: .91
+}
+
+.balloon.x1::before {
+    background-image: radial-gradient(var(--color1), var(--color2));
+}
+
+.balloon.x2 {
+    background-image: radial-gradient(var(--color3), var(--color4));
+    left: 35%;
+    animation-duration: 12s;
+    zoom: .94
+}
+
+.balloon.x2::before {
+    background-image: radial-gradient(var(--color3), var(--color4));
+}
+
+.balloon.x3 {
+    background-image: radial-gradient(var(--color5), var(--color6));
+    left: 45%;
+    animation-duration: 17s;
+    zoom: .88
+}
+
+.balloon.x3::before {
+    background-image: radial-gradient(var(--color5), var(--color6));
+}
+
+.balloon.x4 {
+    background-image: radial-gradient(var(--color3), var(--color6));
+    left: 65%;
+    animation-duration: 50s;
+    zoom: .7
+}
+
+.balloon.x4::before {
+    background-image: radial-gradient(var(--color3), var(--color6));
+}
+
+@keyframes thread-anime {
+    from {
+        border-radius: 50% 0 0 0%;
+    }
+
+    to {
+        border-radius: 50% 0 0 50%;
+    }
+}
+
+@keyframes balloon-anime {
+    from {
+        bottom: -100vh;
+    }
+
+    to {
+        bottom: 100vh;
+    }
+}
