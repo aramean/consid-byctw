@@ -33,10 +33,10 @@
     width: 30px;
     height: 80px;
     position: absolute;
-    left: 40%;
-    top: 80%;
+    left: 30%;
+    top: 95%;
     border-radius: 50% 0 0 50%;
-    border-left: 1px solid black;
+    border-left: 1px solid rgba(0,0,0 , .4);
     animation: thread-anime linear infinite alternate;
 }
 
